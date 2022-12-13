@@ -2,10 +2,10 @@ package multithreading.count_down_latch;
 
 import java.util.concurrent.CountDownLatch;
 
-public class ToysFacrory implements Runnable {
+public class ToyFacrory implements Runnable {
     CountDownLatch latch;
 
-    public ToysFacrory(CountDownLatch countDownLatch) {
+    public ToyFacrory(CountDownLatch countDownLatch) {
         latch = countDownLatch;
     }
 

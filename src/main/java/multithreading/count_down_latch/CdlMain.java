@@ -8,7 +8,7 @@ public class CdlMain {
 
         System.out.println("Starting");
 
-        new Thread(new ToysFacrory(countDownLatch)).start();
+        new Thread(new ToyFacrory(countDownLatch)).start();
 
         try {
             countDownLatch.await();
