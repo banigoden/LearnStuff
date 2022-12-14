@@ -20,11 +20,11 @@ public class CreateString implements Runnable {
             for (int j = 0; j < 5; j++) {
                 string += value++;
             }
-        try {
-            string = (String) exchanger.exchange(string);
-        } catch (InterruptedException e) {
+            try {
+                string = (String) exchanger.exchange(string);
+            } catch (InterruptedException e) {
             System.out.println(e);
-        }
+            }
         }
     }
 }
